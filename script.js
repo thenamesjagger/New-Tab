@@ -43,7 +43,7 @@ function displayTime(time) {
 function dark_colors() {
     let link = document.getElementsByTagName('a');
     let mode_id = document.getElementById("mode");
-    document.body.style.background = "#1e232f";
+    document.body.style.background = "#000000";
     document.getElementById("greeting").style.color = "#dee3de";
     mode_id.src = "ico/light.png";
     mode_id.style.filter = "invert(100%) sepia(0%) saturate(1620%) hue-rotate(8deg) brightness(94%) contrast(88%)";
