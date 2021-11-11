@@ -62,46 +62,46 @@ a:hover {
     animation:blinking 5s infinite;
     }
     @keyframes blinking{
-    0%{     color: #1383F2; }
-    20%{    color: #459EF7; }
-    40%{    color: #77B8F8; }
-    60%{    color: #77B8F8; }
-    80%{    color: #459EF7; }
-    100%{   color: #1383F2; }
+    0%{     color: #b48ead; }
+    20%{    color: #b48ead; }
+    40%{    color: #b48ead; }
+    60%{    color: #b48ead; }
+    80%{    color: #b48ead; }
+    100%{   color: #b48ead; }
 }
 
 #w {
     animation:w_blink 5s infinite;
     }
     @keyframes w_blink{
-    0%{     color: #9866ED; }
-    20%{    color: #9B67F5; }
-    40%{    color: #9873D9; }
-    60%{    color: #834CE0; }
-    80%{    color: #7739E3; }
-    100%{   color: #9866ED; }
+    0%{     color: #d08770; }
+    20%{    color: #d08770; }
+    40%{    color: #d08770; }
+    60%{    color: #d08770; }
+    80%{    color: #d08770; }
+    100%{   color: #d08770; }
 }
 #s {
     animation:s_blink 5s infinite;
     }
     @keyframes s_blink{
-    0%{     color: #5BE3AF; }
-    20%{    color: #22AB76; }
-    40%{    color: #1FC485; }
-    60%{    color: #5EB895; }
-    80%{    color: #66D9AD; }
-    100%{   color: #5BE3AF; }
+    0%{     color: #ebcb8b; }
+    20%{    color: #ebcb8b; }
+    40%{    color: #ebcb8b; }
+    60%{    color: #ebcb8b; }
+    80%{    color: #ebcb8b; }
+    100%{   color: #ebcb8b; }
 }
 #d {
     animation:d_blink 5s infinite;
     }
     @keyframes d_blink{
-    0%{     color: #D1B22A; }
-    20%{    color: #D9C777; }
-    40%{    color: #D1B22A; }
-    60%{    color: #CCA806; }
-    80%{    color: #E0BE24; }
-    100%{   color: #D1B22A; }
+    0%{     color: #a3be8c; }
+    20%{    color: #a3be8c; }
+    40%{    color: #a3be8c; }
+    60%{    color: #a3be8c; }
+    80%{    color: #a3be8c; }
+    100%{   color: #a3be8c; }
 }
 #l {
     animation:l_blink 5s infinite;
