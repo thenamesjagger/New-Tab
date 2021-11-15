@@ -1,8 +1,10 @@
-// Change this to your username
+// sets username for greeting message
 var username = "Jagger";
 
+// constant to set the greeting message based on the time of the day
 const determineGreet = hours => document.getElementById("greeting").innerText = `Good ${hours < 12 ? "Morning," : hours < 18 ? "Afternoon," : "Evening,"} ${username}.`;
 
+// web api to load time based on browser time
 window.addEventListener('load', (event) => {
     let today = new Date();
     let time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -11,12 +13,14 @@ window.addEventListener('load', (event) => {
     displayTime(time);
 });
 
+// sets time above the greeting message
 setInterval(function () {
     var today = new Date();
     var time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     document.getElementById("time").innerHTML = time;
 }, 1000);
 
+// web api to registar click for changing color schemes
 document.getElementById("mode").addEventListener("click", function () {
     if (mode == "dark") {
         change_colors("light");
@@ -32,10 +36,12 @@ document.getElementById("mode").addEventListener("click", function () {
     }
 });
 
+// function to display time
 function displayTime(time) {
     document.getElementById("time").innerHTML = time;
 }
 
+// function for the dark color scheme, sets background, text and time colors
 function dark_colors() {
     let link = document.getElementsByTagName('a');
     let mode_id = document.getElementById("mode");
@@ -48,6 +54,7 @@ function dark_colors() {
 
 }
 
+// function for the white color scheme, sets background, text and time colors
 function light_colors() {
     let link = document.getElementsByTagName('a');
     let mode_id = document.getElementById("mode");
@@ -59,6 +66,7 @@ function light_colors() {
         link[i].style.color = "#767283";
 }
 
+// function to run when color changer is clicked
 function change_colors(mode) {
     if (mode == "dark") light_colors();
     else dark_colors();
