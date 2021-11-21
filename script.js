@@ -1,10 +1,10 @@
 // sets username for greeting message
 var username = "Jagger";
 
-// constant to set the greeting message based on the time of the day
+// constant to set the greeting message based on the time of the day, refrence https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 const determineGreet = hours => document.getElementById("greeting").innerText = `Good ${hours < 12 ? "Morning," : hours < 18 ? "Afternoon," : "Evening,"} ${username}.`;
 
-// web api to load time based on browser time
+// web api to load time based on browser time, reference https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 window.addEventListener('load', (event) => {
     let today = new Date();
     let time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -20,7 +20,7 @@ setInterval(function () {
     document.getElementById("time").innerHTML = time;
 }, 1000);
 
-// web api to registar click for changing color schemes
+// web api to registar click for changing color schemes, refrence https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
 document.getElementById("mode").addEventListener("click", function () {
     if (mode == "dark") {
         change_colors("light");
